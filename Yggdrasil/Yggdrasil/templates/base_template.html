@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <!-- css -->
+        {% load static %}        
+        <link rel="stylesheet" type="text/css" href="{% static 'Yggdrasil/css/styles.css' %}">
+        <title>Home</title>       
+        <!-- Icon -->
+        <link rel="icon" href="../../static/Yggdrasil/img/crow.ico"> 
+    </head>
+    <body>      
+        
+        <!-- Header -->
+
+        <header class="header">
+            <div class="brand">
+                <p class="brand__name">Hugin&Munin</p>
+                <div class="brand__logo"></div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Interest</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Changing content -->
+
+        {% block content %}
+
+        {% endblock %}
+
+        <!-- Footer -->
+        <Footer>
+
+            
+        </Footer>
+        
+    </body>
+</html>

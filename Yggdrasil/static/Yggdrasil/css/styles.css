@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "beyond";
+    src: url("../fonts/beyond-wonderland.regular.ttf");
+}
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url("../fonts/Oswald-Bold.ttf");
+}
+@font-face {
+    font-family: "Oswald-Regular";
+    src: url("../fonts/Oswald-Regular.ttf");
+}
+@font-face {
+    font-family: "Oswald-SemiBold";
+    src: url("../fonts/Oswald-SemiBold.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+:root{
+    --black:#212529;
+    --white:#F8F9FA;
+    --blue:#0353A4;
+}
+
+.header{
+    display: flex;
+    background: var(--black);    
+    justify-content: center;
+    align-content: center;
+    height: 5vh;    
+}
+
+.brand{
+    flex-grow: 1;
+    margin: 0px 0px 0px 10px;
+    display: flex;
+}
+
+.brand__name{
+    color: var(--white);
+    font-family: "beyond";
+    font-size: 36px;
+    padding: 5px;
+}
+
+.brand__logo{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("../img/crow.svg");    
+    background-size: 100px 82px;
+    background-size: contain;    
+}
+
+
+.menu{
+    flex-grow: 4;    
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;    
+}
+
+.menu li{
+    list-style:none;  
+    display: inline-block;          
+}
+
+.menu li a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Oswald-Regular";
+}
+
+.menu li a:hover{    
+    color: var(--blue);
+}
+
+/* body {
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+    padding: 3rem;
+    background: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg"), var(--color-dark-cyan);
+    background-repeat: no-repeat;
+    background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(40vw + 25%) top calc(72vh - 10vw);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2.25rem;
+  } */
