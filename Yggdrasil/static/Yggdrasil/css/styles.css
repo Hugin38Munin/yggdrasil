@@ -30,6 +30,8 @@
     --black:#212529;
     --white:#F8F9FA;
     --blue:#0353A4;
+    --gray: #6c757d;
+    --gray_dark: #343a40;
 }
 
 .header{
@@ -51,15 +53,16 @@
     font-family: "beyond";
     font-size: 36px;
     padding: 5px;
+    margin-left: 16%;
 }
 
 .brand__logo{
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     background: url("../img/crow.svg");    
     background-size: 100px 82px;
-    background-size: contain;    
+    background-size: cover;    
 }
 
 
@@ -85,12 +88,14 @@
     font-family: "Oswald-Regular";
 }
 
+
+
 .menu li a:hover{    
     color: var(--blue);
 }
 
 .footer{
-    position: relative;
+    position: static;
 }
 
 .contact{
@@ -134,4 +139,67 @@
 
 .social_media li a:hover{    
     color: var(--blue);
+}
+
+
+
+/* >>>------------->HOME<-------------<<< */
+
+
+
+.body_content{    
+    position: relative;
+    margin: 50px 30px;
+}
+.us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.about_us{
+    width: 40%;
+    height: 300px;
+    align-self: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.about_us__title, .knowledge__title{
+    font-family: 'Oswald-Bold';
+    color: var(--gray_dark);
+    letter-spacing: 0.5px;
+}
+
+.about_us__content, .knowledge__content{
+    margin-top: 20px;    
+    font-family: 'Oswald-Regular';
+    font-size: 14px;
+    color: var(--gray);
+    
+}
+
+.picture{
+    display: block;
+    background: url("../img/crow_black.svg");    
+    background-size: 100% 100%; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-basis: 30%;
+}
+
+.knowledges{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.knowledge{
+    flex-basis: 23%;
+    height: 200px;
+    margin-top: 50px;
 }

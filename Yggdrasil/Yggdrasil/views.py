@@ -2,4 +2,4 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def home(request):
-    return render(request,"base_template.html",{'aaaa': 'aaaa'})
+    return render(request,"home.html",{'aaaa': 'aaaa'})

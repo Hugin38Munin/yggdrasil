@@ -78,8 +78,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'YggdrasilDB',
         'USER': 'postgres',
-        #'PASSWORD': 'Warrior11*',
-        'PASSWORD': 'doctoradO159',
+        'PASSWORD': 'Warrior11*',
+        # 'PASSWORD': 'doctoradO159',
         'HOST': 'localhost',
         'PORT': '5432',
     }
